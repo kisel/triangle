@@ -65,11 +65,13 @@ function App() {
 
       <form>
       {vardef.map((v)=> (
-          <div key={v.key} className="htmlForm-group" style={{color: v.color}}>
+          <div key={v.key} className="form-value" style={{color: v.color}}>
               {v.label || <label htmlFor="alpha">{v.key}: </label> }
               <input type="number"
                   value={getFormValue(ctx, v.key)}
+                  placeholder="?"
                   readOnly={v.editable === false}
+                  style={{color: v.color}}
                   onChange={(t)=> setCtx(change(ctx, v.key, t.target.value))}
               />
           </div>
