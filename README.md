@@ -1,5 +1,9 @@
 # Simple triangle calculator
 
+![triangle](./src/triangle.svg)
+
+calculate alpha by right triangle edge lengths
+
 ### build
 
 ```bash
